@@ -1,0 +1,12 @@
+{
+  "name": "ecolim-mock-server",
+  "version": "1.0.0",
+  "description": "Mock REST API para ECOLIM S.A.C. Android App",
+  "main": "mock-server.js",
+  "scripts": {
+    "start": "node mock-server.js"
+  },
+  "keywords": ["ecolim", "mock", "api"],
+  "author": "ECOLIM S.A.C.",
+  "license": "MIT"
+}
