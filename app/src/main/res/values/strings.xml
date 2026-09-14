@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ECOLIM</string>
+    
+    <!-- Pantalla: Login -->
+    <string name="title_login">ECOLIM - Iniciar sesión</string>
+    <string name="hint_usuario">Usuario / DNI</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_ingresar">INGRESAR</string>
+    <string name="chk_recordar_sesion">Recordar sesión</string>
+    <string name="error_campos_vacios">Por favor complete todos los campos.</string>
+    <string name="error_credenciales">Usuario o contraseña incorrectos.</string>
+
+    <!-- Pantalla: Registro de residuo -->
+    <string name="title_registro">Registrar Residuo</string>
+    <string name="hint_tipo_residuo">Tipo de residuo ▼ (spinner)</string>
+    <string name="hint_cantidad_kg">Cantidad (kg)</string>
+    <string name="hint_zona">Zona / Área ▼ (spinner)</string>
+    <string name="btn_escanear_foto">[Cam] Escanear código / Foto</string>
+    <string name="hint_fecha_hora">Fecha y hora (auto)</string>
+    <string name="btn_guardar_registro">GUARDAR REGISTRO</string>
+    <string name="btn_sincronizar_ahora">SINCRONIZAR AHORA</string>
+    
+    <!-- Pantalla: Historial -->
+    <string name="title_historial">Historial de Recolecciones</string>
+    <string name="estado_sincronizado">✓ Sincronizado</string>
+    <string name="estado_pendiente">⏳ Pendiente</string>
+    <string name="sin_recolecciones">No hay recolecciones registradas aún.</string>
+
+    <!-- Pantalla: Reportes -->
+    <string name="title_reportes">Reportes</string>
+    <string name="label_desde">Desde:</string>
+    <string name="label_hasta">Hasta:</string>
+    <string name="hint_todos_los_tipos">Tipo de residuo ▼ (todos)</string>
+    <string name="btn_filtrar">FILTRAR</string>
+    <string name="btn_exportar_compartir">EXPORTAR / COMPARTIR</string>
+    <string name="total_periodo">Total en período:</string>
+
+    <!-- Navegación -->
+    <string name="nav_registro">Registrar</string>
+    <string name="nav_historial">Historial</string>
+    <string name="nav_reportes">Reportes</string>
+
+    <!-- Diálogos y permisos -->
+    <string name="permiso_camara_necesario">Se requiere permiso de cámara para escanear el código y capturar evidencia.</string>
+    <string name="permiso_ubicacion_necesario">Se requiere permiso de ubicación para geolocalizar la recolección.</string>
+</resources>

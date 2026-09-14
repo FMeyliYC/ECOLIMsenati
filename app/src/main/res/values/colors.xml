@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta ECOLIM S.A.C. inspirada en el wireframe de diseño -->
+    <color name="primary_blue">#1976D2</color>
+    <color name="primary_blue_dark">#0D47A1</color>
+    <color name="primary_blue_light">#BBDEFB</color>
+    
+    <!-- Botón verde "INGRESAR" y "GUARDAR REGISTRO" -->
+    <color name="btn_green">#2E7D32</color>
+    <color name="btn_green_pressed">#1B5E20</color>
+
+    <!-- Botón azul "SINCRONIZAR AHORA" y "FILTRAR" -->
+    <color name="btn_blue">#1976D2</color>
+    <color name="btn_blue_pressed">#1565C0</color>
+
+    <!-- Botón naranja "EXPORTAR / COMPARTIR" -->
+    <color name="btn_orange">#EF6C00</color>
+    <color name="btn_orange_pressed">#E65100</color>
+
+    <!-- Neutrales, fondos y bordes según wireframe -->
+    <color name="background_light">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="input_background">#F1F5F9</color>
+    <color name="input_border">#CBD5E1</color>
+    <color name="dashed_border">#94A3B8</color>
+    
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Estados -->
+    <color name="status_synced">#2E7D32</color>
+    <color name="status_pending">#F57C00</color>
+    <color name="status_error">#D32F2F</color>
+    
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

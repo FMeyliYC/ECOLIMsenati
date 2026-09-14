@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Círculo exterior con borde azul como en el wireframe -->
+    <path
+        android:strokeColor="#1976D2"
+        android:strokeWidth="3.5"
+        android:fillColor="#E3F2FD"
+        android:pathData="M 60, 60 m -50, 0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0" />
+
+    <!-- Hoja ecológica y gota de limpieza dentro del círculo -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M60,35 C50,45 42,60 48,72 C53,82 67,82 72,72 C78,60 70,45 60,35 Z" />
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M60,48 C55,56 52,65 56,71 C58,74 62,74 64,71 C68,65 65,56 60,48 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M57,58 C55,62 55,65 57,67 C58,68 59,67 58,65 C57,63 58,60 59,58 Z" />
+</vector>
