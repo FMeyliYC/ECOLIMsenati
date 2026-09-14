@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- Barra superior azul idéntica a Pantalla: Registro de residuo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primary_blue"
+        android:gravity="center"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_registro"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Spinner Tipo de residuo ▼ (spinner) -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:background="@drawable/bg_rounded_input">
+
+                <Spinner
+                    android:id="@+id/spTipoResiduo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+            </FrameLayout>
+
+            <!-- Campo Cantidad (kg) -->
+            <EditText
+                android:id="@+id/etCantidadKg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="@string/hint_cantidad_kg"
+                android:inputType="numberDecimal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:textSize="15sp" />
+
+            <!-- Spinner Zona / Área ▼ (spinner) -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_rounded_input">
+
+                <Spinner
+                    android:id="@+id/spZona"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+            </FrameLayout>
+
+            <!-- Botón / Card con borde punteado: [Cam] Escanear código / Foto -->
+            <LinearLayout
+                android:id="@+id/btnEscanearFoto"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_dashed_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/btn_escanear_foto"
+                    android:src="@drawable/ic_camera" />
+
+                <TextView
+                    android:id="@+id/tvEscanearFotoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_escanear_foto"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Vista previa de foto o código escaneado (si existe) -->
+            <TextView
+                android:id="@+id/tvCodigoCapturado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/primary_blue"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <!-- Campo Fecha y hora (auto) -->
+            <EditText
+                android:id="@+id/etFechaHora"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_rounded_input"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/hint_fecha_hora"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:textSize="15sp" />
+
+            <!-- Botón verde GUARDAR REGISTRO -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGuardarRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/btn_primary_green"
+                android:text="@string/btn_guardar_registro"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Botón azul SINCRONIZAR AHORA -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSincronizarAhora"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/btn_primary_blue"
+                android:text="@string/btn_sincronizar_ahora"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Indicador de pendientes -->
+            <TextView
+                android:id="@+id/tvEstadoPendientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Pendientes de sincronizar: 0"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <ProgressBar
+                android:id="@+id/pbRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
