@@ -149,14 +149,12 @@ erDiagram
 
 ## 5. Wireframes y Diseño Implementado
 
-![Interfaces ECOLIM S.A.C.](docs/screenshots/interfaces_ecolim_overview.png)
-
 <p align="center">
-  <img src="docs/screenshots/01_login.png" width="31%" alt="Pantalla: Login" />
+  <img src="docs/screenshots/01_login.png" width="32%" alt="Pantalla: Login" />
   &nbsp;
-  <img src="docs/screenshots/02_registro_residuo.png" width="31%" alt="Pantalla: Registro de Residuo" />
+  <img src="docs/screenshots/02_registro_residuo.png" width="32%" alt="Pantalla: Registro de Residuo" />
   &nbsp;
-  <img src="docs/screenshots/03_reportes.png" width="31%" alt="Pantalla: Reportes" />
+  <img src="docs/screenshots/03_reportes.png" width="32%" alt="Pantalla: Reportes" />
 </p>
 
 ### Pantalla 1: Login
